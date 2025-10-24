@@ -3,6 +3,7 @@ apply plugin: 'com.android.library'
 import org.apache.tools.ant.taskdefs.condition.Os
 
 android {
+	namespace 'com.serenegiant.usb'
 	compileSdkVersion rootProject.ext.versionCompiler
 	buildToolsVersion rootProject.ext.versionBuildTool
 
@@ -16,7 +17,7 @@ android {
 		targetSdkVersion rootProject.ext.versionTarget
     }
 
-	lintOptions {
+	lint {
 		checkReleaseBuilds false
 		// Or, if you prefer, you can continue to check for errors in release builds,
 		// but continue the build even when errors are found:
